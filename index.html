@@ -8,6 +8,13 @@
   </style>
   <script>
   console.log("JavaScript is alive");
+
+  var eDiv = document.getElementById('essentials').children[0].children[3];
+  console.log(eDiv);
+
+  function wineRed() {
+    document.getElementById('essentials').children[0].children[3].style.color="red";
+  }
   </script>
 </head>
 <body>
@@ -21,10 +28,10 @@
 
   <div id="essentials">
     <ul>
-      <li>milk</li>
+      <li onclick="alert('Milk')">milk</li>
       <li class="selected">honey</li>
       <li>water</li>
-      <li>wine</li>
+      <li onclick="wineRed()">wine</li>
       <li>beer</li>
     </ul>
   </div>
